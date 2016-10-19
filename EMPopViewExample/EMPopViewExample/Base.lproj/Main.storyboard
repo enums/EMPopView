@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="V3O-LL-8MB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="6U4-WP-GQF">
+            <objects>
+                <viewController id="V3O-LL-8MB" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rSV-hi-62Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="XUD-Ls-K3b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uAO-FA-TBm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="au3-cF-rZn">
+                                <state key="normal" title="Loading"/>
+                                <connections>
+                                    <action selector="loading" destination="V3O-LL-8MB" eventType="touchUpInside" id="27Z-07-6qu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7L3-pf-Nru">
+                                <state key="normal" title="Progress"/>
+                                <connections>
+                                    <action selector="progress" destination="V3O-LL-8MB" eventType="touchUpInside" id="JSB-se-nGP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4b-PD-orX">
+                                <state key="normal" title="Sheet"/>
+                                <connections>
+                                    <action selector="sheet" destination="V3O-LL-8MB" eventType="touchUpInside" id="mSG-2H-I5z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJn-Bc-keE">
+                                <state key="normal" title="Alert"/>
+                                <connections>
+                                    <action selector="alert" destination="V3O-LL-8MB" eventType="touchUpInside" id="rMb-yb-pKB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7L3-pf-Nru" firstAttribute="centerX" secondItem="uAO-FA-TBm" secondAttribute="centerX" id="0UM-7V-SNw"/>
+                            <constraint firstItem="HJn-Bc-keE" firstAttribute="centerY" secondItem="uAO-FA-TBm" secondAttribute="centerY" multiplier="5/5" id="KbI-x3-fIA"/>
+                            <constraint firstItem="au3-cF-rZn" firstAttribute="centerY" secondItem="uAO-FA-TBm" secondAttribute="centerY" multiplier="2/5" id="KeP-Uj-ha9"/>
+                            <constraint firstItem="A4b-PD-orX" firstAttribute="centerY" secondItem="uAO-FA-TBm" secondAttribute="centerY" multiplier="4/5" id="SMG-fS-xND"/>
+                            <constraint firstItem="au3-cF-rZn" firstAttribute="centerX" secondItem="uAO-FA-TBm" secondAttribute="centerX" id="cA1-W9-I7t"/>
+                            <constraint firstItem="HJn-Bc-keE" firstAttribute="centerX" secondItem="uAO-FA-TBm" secondAttribute="centerX" id="dSX-st-sjV"/>
+                            <constraint firstItem="A4b-PD-orX" firstAttribute="centerX" secondItem="uAO-FA-TBm" secondAttribute="centerX" id="h8O-st-I7V"/>
+                            <constraint firstItem="7L3-pf-Nru" firstAttribute="centerY" secondItem="uAO-FA-TBm" secondAttribute="centerY" multiplier="3/5" id="uie-Yq-s1w"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hJL-HE-1yT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TRa-Ia-ksd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
