@@ -37,7 +37,7 @@ Before use the popview, we need to create a config object.
 ## Show
 Now we get an `EMLoadingViewConfig`. We can use it to config an `EMLoadingView` like this:
 ```swift
-        let index = EMPopViewFactory.showView(withType: .loading, config: config)
+    let index = EMPopViewFactory.showView(withType: .loading, config: config)
 ```
 
 ## Close
