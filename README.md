@@ -1,8 +1,8 @@
 # EMPopView
 A popview framework with Swift 3.0 includes `LoadingView`, `ProgressView`, `SheetView` and `AlertView`.
 
-# Introduction
-See [here](http://www.jianshu.com/p/f5d4157dfd51).
+# 中文介绍
+你可以在[「这里」](http://www.jianshu.com/p/f5d4157dfd51)找到详细的中文介绍和扩展方法。
 
 # Requirements
 - iOS 10
@@ -46,4 +46,7 @@ The value of `index` is the index of the `EMLoadingView` we already buld. When w
     EMPopViewFactory.closeView(withIndex: index)
 ```
 
-# Other
+# Extension
+Edit the code. 
+Add some option in `EMPopViewShowAnimationStyle` and `EMPopViewCloseAnimationStyle` to extension animations.
+Add some option in `EMPopViewColorStyle` to extension skins.
